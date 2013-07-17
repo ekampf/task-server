@@ -28,6 +28,18 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  # Factories
+	gem 'faker'
+	gem 'factory_girl_rails', '~> 4.0'
+  
+  # RSpec
+  gem "rspec-rails"
+
+  # Helpers
+  gem 'timecop'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
